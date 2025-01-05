@@ -7,7 +7,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 const MainLayout = () => {
     const {theme} = useContext(AuthContext)
     return (
-        <div className={`${theme === 'dark' ? 'text-white' : 'black'}`}>
+        <div className={`${theme === 'dark' ? 'text-white' : 'black'} max-w-screen-2xl mx-auto`}>
             {/* navbar */}
             <header className='shadow-lg py-2'>
                 <Navbar></Navbar>
